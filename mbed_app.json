@@ -1,0 +1,63 @@
+{
+    "macros": [
+        "LWIP_SNMP=1",
+        "SNMP_USE_NETCONN=1",
+        "SNMP_USE_RAW=0",
+        "SNMP_STACK_SIZE=4096",
+        "SNMP_DEBUG=LWIP_DBG_ON",
+        "SNMP_MIB_DEBUG=LWIP_DBG_ON",
+        "MIB2_STATS=1"
+    ],
+    "target_overrides": {
+        "*": {
+            "rtos.main-thread-stack-size"               : 4096,
+            "lwip.mem-size"                             : 8000,
+            "platform.stdio-convert-newlines"           : true,
+            "platform.stdio-baud-rate"                  : 115200,
+            "platform.stack-stats-enabled"              : true,
+            "platform.heap-stats-enabled"               : true,
+            "mbed-trace.enable"                         : true,
+            "lwip.debug-enabled"                        : true,
+            "lwip.use-mbed-trace"                       : true
+        },
+        "NUMAKER_PFM_M487": {
+            "target.network-default-interface-type" : "ETHERNET",
+            "target.macros_add"                     : ["MBEDTLS_ENTROPY_HARDWARE_ALT"],
+            "gpio-perif-button1"                    : "BUTTON1",
+            "gpio-perif-button2"                    : "BUTTON2",
+            "gpio-perif-led1"                       : "LED1",
+            "gpio-perif-led2"                       : "LED2"
+        },
+        "NUMAKER_IOT_M487": {
+            "target.network-default-interface-type" : "WIFI",
+            "nsapi.default-wifi-security"           : "WPA_WPA2",
+            "nsapi.default-wifi-ssid"               : "\"SSID\"",
+            "nsapi.default-wifi-password"           : "\"PASSWORD\"",
+            "esp8266.tx"                            : "PH_8",
+            "esp8266.rx"                            : "PH_9",
+            "esp8266.rts"                           : "A2",
+            "esp8266.cts"                           : "A3",
+            "esp8266.rst"                           : "PH_3",
+            "esp8266.provide-default"               : true,
+            "target.macros_add"                     : ["MBEDTLS_ENTROPY_HARDWARE_ALT"],
+            "gpio-perif-button1"                    : "BUTTON1",
+            "gpio-perif-button2"                    : "BUTTON2",
+            "gpio-perif-led1"                       : "LED1",
+            "gpio-perif-led2"                       : "LED2"
+        }
+    },
+    "config": {
+        "gpio-perif-button1": {
+            "help"      : "PinName for button1, used for SNMP private GPIO peripheral MIB"
+        },
+        "gpio-perif-button2": {
+            "help"      : "PinName for button2, used for SNMP private GPIO peripheral MIB"
+        },
+        "gpio-perif-led1": {
+            "help"      : "PinName for led1, used for SNMP private GPIO peripheral MIB"
+        },
+        "gpio-perif-led2": {
+            "help"      : "PinName for led2, used for SNMP private GPIO peripheral MIB"
+        }
+    }
+}

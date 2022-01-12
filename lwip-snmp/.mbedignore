@@ -1,0 +1,2 @@
+lwip/src/apps/snmp/snmp_netconn.c
+lwip/src/apps/snmp/snmp_raw.c
