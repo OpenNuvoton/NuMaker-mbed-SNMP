@@ -104,8 +104,8 @@ Dependent on your network environment, connect host and target board to the same
 
 1.  Clone the example and navigate into it
     ```
-    $ git clone https://github.com/OpenNuvoton/NuMaker-mbed-lwIP-SNMP-Agent-example
-    $ cd NuMaker-mbed-lwIP-SNMP-Agent-example
+    $ git clone https://github.com/OpenNuvoton/NuMaker-mbed-SNMP
+    $ cd NuMaker-mbed-SNMP
     ```
 1.  Deploy necessary libraries
     ```
@@ -127,7 +127,7 @@ Dependent on your network environment, connect host and target board to the same
 
 ### Flash the image
 
-Just drag-n-drop `NuMaker-mbed-lwIP-SNMP-Agent-example.bin` onto NuMaker-PFM-M487 board.
+Just drag-n-drop `NuMaker-mbed-SNMP.bin` onto NuMaker-PFM-M487 board.
 
 > **_NOTE:_** The operation above requires NuMaker-PFM-M487 board's Nu-Link swiched to **MASS** mode (MSG to ON).
 
