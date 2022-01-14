@@ -31,6 +31,12 @@ target_sources(${APP_TARGET}
         app-snmp/main.cpp
         app-snmp/mib/snmp_gpio_perif_mib.cpp
         app-snmp/transport/snmp_netconn_mbed.cpp
+        pre-main/host-stdin/dispatch_host_command.cpp
+        pre-main/host-stdin/fetch_host_command.cpp
+        pre-main/host-stdin/mem_stats.cpp
+        pre-main/host-stdin/pump_host_command.cpp
+        pre-main/mbed_main.cpp
+        targets/TARGET_NUVOTON/platform_entropy.cpp
 )
 
 if("NUVOTON" IN_LIST MBED_TARGET_LABELS)
