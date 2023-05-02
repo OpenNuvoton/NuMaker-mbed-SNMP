@@ -20,6 +20,22 @@
             "lwip.debug-enabled"                        : true,
             "lwip.use-mbed-trace"                       : true
         },
+        "NUMAKER_IOT_M467": {
+            "target.network-default-interface-type" : "WIFI",
+            "nsapi.default-wifi-security"           : "WPA_WPA2",
+            "nsapi.default-wifi-ssid"               : "\"SSID\"",
+            "nsapi.default-wifi-password"           : "\"PASSWORD\"",
+            "esp8266.tx"                            : "PC_1",
+            "esp8266.rx"                            : "PC_0",
+            "esp8266.rts"                           : "PC_3",
+            "esp8266.cts"                           : "PC_2",
+            "esp8266.rst"                           : "PC_4",
+            "esp8266.provide-default"               : true,
+            "gpio-perif-button1"                    : "BUTTON1",
+            "gpio-perif-button2"                    : "BUTTON2",
+            "gpio-perif-led1"                       : "LED1",
+            "gpio-perif-led2"                       : "LED2"
+        },
         "NUMAKER_PFM_M487": {
             "target.network-default-interface-type" : "ETHERNET",
             "target.macros_add"                     : ["MBEDTLS_ENTROPY_HARDWARE_ALT"],

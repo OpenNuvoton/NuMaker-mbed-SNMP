@@ -50,6 +50,7 @@ For demostration, the example involves two MIB modules:
 
 Platform                                                                    |  Connectivity       
 ----------------------------------------------------------------------------|-------------------
+[NuMaker-IoT-M467](https://os.mbed.com/platforms/NUMAKER-IOT-M467/)         | Wi-Fi ESP8266     
 [NuMaker-PFM-M487](https://developer.mbed.org/platforms/NUMAKER-PFM-M487/)  | Ethernet          
 [NuMaker-IoT-M487](https://os.mbed.com/platforms/NUMAKER-IOT-M487/)         | Wi-Fi ESP8266     
 
