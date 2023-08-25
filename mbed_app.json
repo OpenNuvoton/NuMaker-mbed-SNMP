@@ -6,7 +6,9 @@
         "SNMP_STACK_SIZE=4096",
         "SNMP_DEBUG=LWIP_DBG_ON",
         "SNMP_MIB_DEBUG=LWIP_DBG_ON",
-        "MIB2_STATS=1"
+        "MIB2_STATS=1",
+	"LWIP_SNMP_V3=1",
+	"MBEDTLS_SHA1_C"
     ],
     "target_overrides": {
         "*": {
@@ -21,7 +23,7 @@
             "lwip.use-mbed-trace"                       : true
         },
         "NUMAKER_IOT_M467": {
-            "target.network-default-interface-type" : "WIFI",
+            "target.network-default-interface-type" : "ETHERNET",
             "nsapi.default-wifi-security"           : "WPA_WPA2",
             "nsapi.default-wifi-ssid"               : "\"SSID\"",
             "nsapi.default-wifi-password"           : "\"PASSWORD\"",

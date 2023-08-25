@@ -49,6 +49,7 @@ endif()
 target_link_libraries(${APP_TARGET}
     PRIVATE
         mbed-os
+        mbed-mbedtls
         mbed-netsocket
         mbed-wifi
         lwip-snmp

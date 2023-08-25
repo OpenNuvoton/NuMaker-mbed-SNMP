@@ -32,5 +32,6 @@ target_sources(lwip-snmp
         lwip/src/apps/snmp/snmp_traps.c
         lwip/src/apps/snmp/snmpv3.c
         lwip/src/apps/snmp/snmpv3_mbedtls.c
+	lwip/src/apps/snmp/snmpv3_dummy.c
 )
 
