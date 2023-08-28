@@ -67,6 +67,12 @@ static void trace_mutex_unlock();
 
 #endif /* #if MBED_CONF_MBED_TRACE_ENABLE */
 
+#if LWIP_SNMP_V3
+extern "C" {
+void snmpv3_dummy_init(void);
+}
+#endif
+
 int main()
 {
 #if MBED_CONF_MBED_TRACE_ENABLE
@@ -151,6 +157,10 @@ int main()
 
     /* Set up synchronization for MIB-2 which needs to access lwIP stats from lwIP thread */
     snmp_threadsync_init(&snmp_mib2_lwip_locks, snmp_mib2_lwip_synchronizer);
+
+#if LWIP_SNMP_V3
+    snmpv3_dummy_init();
+#endif
 
     /* Set up SNMP MIBs */
     snmp_set_mibs(mysnmpagent_mibs, LWIP_ARRAYSIZE(mysnmpagent_mibs));

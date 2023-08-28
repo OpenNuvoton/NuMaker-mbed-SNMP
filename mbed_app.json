@@ -8,7 +8,8 @@
         "SNMP_MIB_DEBUG=LWIP_DBG_ON",
         "MIB2_STATS=1",
 	"LWIP_SNMP_V3=1",
-	"MBEDTLS_SHA1_C"
+	"MBEDTLS_SHA1_C",
+	"MBEDTLS_MD5_C"
     ],
     "target_overrides": {
         "*": {
