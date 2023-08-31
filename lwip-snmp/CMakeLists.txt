@@ -8,6 +8,8 @@ target_include_directories(lwip-snmp
         .
         lwip/src/apps/snmp
         lwip/src/include/lwip/apps
+        ./lwip/src/include
+        ./lwip/src/include/lwip
 )
 
 target_sources(lwip-snmp

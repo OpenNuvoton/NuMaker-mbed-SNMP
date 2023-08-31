@@ -77,11 +77,11 @@ get_user(const char *username)
   size_t i;
 
   for (i = 0; i < LWIP_ARRAYSIZE(user_table); i++) {
-    if (strnlen(username, 32) != strnlen(user_table[i].username, 32)) {
+    if (strlen(username) != strlen(user_table[i].username)) {
       continue;
     }
 
-    if (memcmp(username, user_table[i].username, strnlen(username, 32)) == 0) {
+    if (memcmp(username, user_table[i].username, strlen(username)) == 0) {
       return &user_table[i];
     }
   }
