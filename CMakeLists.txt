@@ -55,6 +55,18 @@ target_link_libraries(${APP_TARGET}
         lwip-snmp
 )
 
+# Custom target
+
+
+if("NUMAKER_M467SJ" IN_LIST MBED_TARGET_LABELS)
+    add_library(mbed-numaker-m467sj INTERFACE)
+    target_include_directories(mbed-numaker-m467sj
+        INTERFACE
+            TARGET_NUMAKER_M467SJ
+    )
+    target_link_libraries(mbed-numaker-m467sj INTERFACE mbed-m460)
+endif()
+
 mbed_set_post_build(${APP_TARGET})
 
 option(VERBOSE_BUILD "Have a verbose build process")

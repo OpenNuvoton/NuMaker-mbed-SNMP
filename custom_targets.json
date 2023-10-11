@@ -1,0 +1,47 @@
+{
+
+    "NUMAKER_M467SJ": {
+        "inherits": [
+            "MCU_M460"
+        ],
+        "device_name": "M467SJHAE",
+        "detect_code": [
+            "1301"
+        ],
+        "overrides": {
+            "usb-uart": "UART_0",
+            "usb-uart-tx": "PA_5",
+            "usb-uart-rx": "PA_4",
+            "spim-ccm-enable": 0,
+            "network-default-interface-type": "ETHERNET"
+        },
+        "mbed_rom_start": "0x0",
+        "mbed_rom_size": "0x100000",
+        "mbed_ram_start": "0x20000000",
+        "mbed_ram_size": "0x80000",
+        "gpio-perif-button1"                    : "BUTTON1",
+        "gpio-perif-button2"                    : "BUTTON2",
+        "gpio-perif-led1"                       : "LED1",
+        "gpio-perif-led2"                       : "LED2"
+    },
+    "NUMAKER_M483KG": {
+        "inherits": [
+            "MCU_M480"
+        ],
+        "device_name": "M483KGCAE2A",
+        "detect_code": [
+            "1301"
+        ],
+        "overrides": {
+            "usb-uart": "UART_0",
+            "usb-uart-tx": "PB_13",
+            "usb-uart-rx": "PB_12",
+            "spim-ccm-enable": 0,
+            "network-default-interface-type": null
+        },
+        "mbed_rom_start": "0x0",
+        "mbed_rom_size": "0x40000",
+        "mbed_ram_start": "0x20000000",
+        "mbed_ram_size": "0x20000"
+    }
+}
