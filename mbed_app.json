@@ -1,9 +1,5 @@
 {
     "macros": [
-    "MBED_CONF_APP_GPIO_PERIF_BUTTON1=BUTTON1",
-    "MBED_CONF_APP_GPIO_PERIF_BUTTON2=BUTTON2",
-    "MBED_CONF_APP_GPIO_PERIF_LED1=LED1",
-    "MBED_CONF_APP_GPIO_PERIF_LED2=LED2",
         "LWIP_SNMP=1",
         "SNMP_USE_NETCONN=1",
         "SNMP_USE_RAW=0",
@@ -29,6 +25,12 @@
             "lwip.debug-enabled"                        : true,
             "lwip.use-mbed-trace"                       : true
         },
+        "NUMAKER_M467SJ": {
+            "gpio-perif-button1"                    : "BUTTON1",
+            "gpio-perif-button2"                    : "BUTTON2",
+            "gpio-perif-led1"                       : "LED1",
+            "gpio-perif-led2"                       : "LED2"
+	},
         "NUMAKER_IOT_M467": {
             "target.network-default-interface-type" : "ETHERNET",
             "nsapi.default-wifi-security"           : "WPA_WPA2",

@@ -18,11 +18,7 @@
         "mbed_rom_start": "0x0",
         "mbed_rom_size": "0x100000",
         "mbed_ram_start": "0x20000000",
-        "mbed_ram_size": "0x80000",
-        "gpio-perif-button1"                    : "BUTTON1",
-        "gpio-perif-button2"                    : "BUTTON2",
-        "gpio-perif-led1"                       : "LED1",
-        "gpio-perif-led2"                       : "LED2"
+        "mbed_ram_size": "0x80000"
     },
     "NUMAKER_M483KG": {
         "inherits": [
